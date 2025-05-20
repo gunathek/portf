@@ -5,8 +5,8 @@ import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
 import Particles from "@/components/ui/particles";
-import Meteors from "@/components/ui/meteors";
-import DotPattern from "@/components/ui/dot-pattern";
+// import Meteors from "@/components/ui/meteors";
+// import DotPattern from "@/components/ui/dot-pattern";
 import Link from "next/link";
 import React from "react";
 import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
@@ -28,7 +28,7 @@ const navigation = [
     { name: "Work", href: "/work" },
 ];
 
-import { User, Briefcase, FileText } from 'lucide-react'
+// import { User, Briefcase, FileText } from 'lucide-react'
 
 
 export default function Home() {
@@ -157,89 +157,89 @@ const DATA = {
     },
 };
 
-export function DockDemo() {
-    return (
-        <div className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center transform-gpu">
-            <TooltipProvider>
-                <Dock direction="middle">
-                    {DATA.navbar.map((item) => (
-                        <DockIcon key={item.label}>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <Link
-                                        href={item.href}
-                                        aria-label={item.label}
-                                        className={cn(
-                                            buttonVariants({ variant: "ghost", size: "icon" }),
-                                            "size-12 rounded-full",
-                                        )}
-                                    >
-                                        <item.icon className="size-4" />
-                                    </Link>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>{item.label}</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </DockIcon>
-                    ))}
-                    <Separator orientation="vertical" className="h-full" />
-                    {Object.entries(DATA.contact.social).map(([name, social]) => (
-                        <DockIcon key={name}>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <Link
-                                        href={social.url}
-                                        aria-label={social.name}
-                                        className={cn(
-                                            buttonVariants({ variant: "ghost", size: "icon" }),
-                                            "size-12 rounded-full",
-                                        )}
-                                    >
-                                        <social.icon className="size-4" />
-                                    </Link>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>{name}</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </DockIcon>
-                    ))}
-                    <Separator orientation="vertical" className="h-full py-2" />
-                    <DockIcon>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <ModeToggle className="rounded-full" />
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>Theme</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </DockIcon>
-                </Dock>
-            </TooltipProvider>
-        </div>
-    );
-}
+// export function DockDemo() {
+//     return (
+//         <div className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center transform-gpu">
+//             <TooltipProvider>
+//                 <Dock direction="middle">
+//                     {DATA.navbar.map((item) => (
+//                         <DockIcon key={item.label}>
+//                             <Tooltip>
+//                                 <TooltipTrigger asChild>
+//                                     <Link
+//                                         href={item.href}
+//                                         aria-label={item.label}
+//                                         className={cn(
+//                                             buttonVariants({ variant: "ghost", size: "icon" }),
+//                                             "size-12 rounded-full",
+//                                         )}
+//                                     >
+//                                         <item.icon className="size-4" />
+//                                     </Link>
+//                                 </TooltipTrigger>
+//                                 <TooltipContent>
+//                                     <p>{item.label}</p>
+//                                 </TooltipContent>
+//                             </Tooltip>
+//                         </DockIcon>
+//                     ))}
+//                     <Separator orientation="vertical" className="h-full" />
+//                     {Object.entries(DATA.contact.social).map(([name, social]) => (
+//                         <DockIcon key={name}>
+//                             <Tooltip>
+//                                 <TooltipTrigger asChild>
+//                                     <Link
+//                                         href={social.url}
+//                                         aria-label={social.name}
+//                                         className={cn(
+//                                             buttonVariants({ variant: "ghost", size: "icon" }),
+//                                             "size-12 rounded-full",
+//                                         )}
+//                                     >
+//                                         <social.icon className="size-4" />
+//                                     </Link>
+//                                 </TooltipTrigger>
+//                                 <TooltipContent>
+//                                     <p>{name}</p>
+//                                 </TooltipContent>
+//                             </Tooltip>
+//                         </DockIcon>
+//                     ))}
+//                     <Separator orientation="vertical" className="h-full py-2" />
+//                     <DockIcon>
+//                         <Tooltip>
+//                             <TooltipTrigger asChild>
+//                                 <ModeToggle className="rounded-full" />
+//                             </TooltipTrigger>
+//                             <TooltipContent>
+//                                 <p>Theme</p>
+//                             </TooltipContent>
+//                         </Tooltip>
+//                     </DockIcon>
+//                 </Dock>
+//             </TooltipProvider>
+//         </div>
+//     );
+// }
 
-export function ParticlesDemo() {
-    const {theme} = useTheme();
-    const [color, setColor] = useState("#ffffff");
-
-    useEffect(() => {
-        setColor(theme === "dark" ? "#ffffff" : "#000000");
-    }, [theme]);
-
-    return (
-        <div
-            className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-            <Particles
-                className="absolute inset-0"
-                quantity={100}
-                ease={80}
-                color={color}
-                refresh
-            />
-        </div>
-    );
-}
+// export function ParticlesDemo() {
+//     const {theme} = useTheme();
+//     const [color, setColor] = useState("#ffffff");
+//
+//     useEffect(() => {
+//         setColor(theme === "dark" ? "#ffffff" : "#000000");
+//     }, [theme]);
+//
+//     return (
+//         <div
+//             className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+//             <Particles
+//                 className="absolute inset-0"
+//                 quantity={100}
+//                 ease={80}
+//                 color={color}
+//                 refresh
+//             />
+//         </div>
+//     );
+// }

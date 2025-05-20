@@ -1,7 +1,7 @@
 "use client";
 import Particles from "@/components/ui/particles";
-import ShineBorder from "@/components/ui/shine-border";
-import {AuroraText} from "@/components/ui/aurora-text";
+// import ShineBorder from "@/components/ui/shine-border";
+// import {AuroraText} from "@/components/ui/aurora-text";
 
 export default function About() {
 
@@ -20,35 +20,35 @@ export default function About() {
     );
 }
 
-export function AuroraTextDemo() {
-    return (
-        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
-            Ship <AuroraText>beautiful</AuroraText>
-        </h1>
-    );
-}
+// export function AuroraTextDemo() {
+//     return (
+//         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
+//             Ship <AuroraText>beautiful</AuroraText>
+//         </h1>
+//     );
+// }
 
-import { WarpBackground } from "@/components/ui/warp-background";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardTitle,
-} from "@/components/ui/card";
-
-export function ExampleComponentDemo() {
-    return (
-        <WarpBackground>
-            <Card className="w-80">
-                <CardContent className="flex flex-col gap-2 p-4">
-                    <CardTitle>Congratulations on Your Promotion!</CardTitle>
-                    <CardDescription>
-                        Your hard work and dedication have paid off. We&apos;re thrilled to
-                        see you take this next step in your career. Keep up the fantastic
-                        work!
-                    </CardDescription>
-                </CardContent>
-            </Card>
-        </WarpBackground>
-    );
-}
+// import { WarpBackground } from "@/components/ui/warp-background";
+// import {
+//     Card,
+//     CardContent,
+//     CardDescription,
+//     CardTitle,
+// } from "@/components/ui/card";
+//
+// export function ExampleComponentDemo() {
+//     return (
+//         <WarpBackground>
+//             <Card className="w-80">
+//                 <CardContent className="flex flex-col gap-2 p-4">
+//                     <CardTitle>Congratulations on Your Promotion!</CardTitle>
+//                     <CardDescription>
+//                         Your hard work and dedication have paid off. We&apos;re thrilled to
+//                         see you take this next step in your career. Keep up the fantastic
+//                         work!
+//                     </CardDescription>
+//                 </CardContent>
+//             </Card>
+//         </WarpBackground>
+//     );
+// }
