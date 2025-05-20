@@ -65,11 +65,11 @@ export default function Home() {
                       I'm building{" "}
                       <Link
                           target="_blank"
-                          href="https://gunathek.com"
+                          href="https://smolboards.com"
                           className="underline duration-500 hover:text-zinc-300"
                       >
-                          unkey.dev
-                      </Link> to solve API authentication and authorization for developers.
+                          smolboards.com
+                      </Link> to put smol ads on big screens.
                   </h2>
               </div>
           <div
