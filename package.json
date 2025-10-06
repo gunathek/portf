@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@geist-ui/core": "^2.3.8",
-    "@next/font": "^14.2.15",
     "@nivo/radar": "^0.88.0",
     "@nivo/scatterplot": "^0.88.0",
     "@radix-ui/react-avatar": "^1.1.3",

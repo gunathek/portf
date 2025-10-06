@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import {ThemeProvider} from "next-themes";
+import { ThemeProvider } from "next-themes";
 
 const calSans = localFont({
-    src: "./fonts/CalSans-SemiBold.ttf",
-    variable: "--font-calsans",
+  src: "./fonts/CalSans-SemiBold.ttf",
+  variable: "--font-calsans",
 });
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +15,7 @@ const geistSans = localFont({
 
 export const metadata: Metadata = {
   title: "gunathek",
-  description: "Gunathek's personal website",
+  description: "Guna Thek's portfolio website",
 };
 
 export default function RootLayout({
@@ -28,14 +28,14 @@ export default function RootLayout({
       <body
         className={`bg-black ${calSans.variable} ${geistSans.variable} antialiased`}
       >
-      <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
